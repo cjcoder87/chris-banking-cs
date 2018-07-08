@@ -1,15 +1,8 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Text;
-using System.IO;
-using System.Reflection;
 using System.Linq;
-using System.Xml;
-using System.Xml.Linq;
 using Library.Models;
-using System.Threading;
-using System.Data.SqlClient;
+
 
 namespace JacksonFinancial.Client
 {
@@ -18,12 +11,10 @@ namespace JacksonFinancial.Client
     static void Main(string[] args)
     {
       DefaultMenu();
-
     }
     public static Program R = new Program();//lets methods run other methods code
 
     public List<Account> accounts = new List<Account>();// allows me to call list from another method
-
 
     public static void DefaultMenu()
     {
@@ -104,7 +95,6 @@ namespace JacksonFinancial.Client
       AccountIndexer += IdMaker;
       Console.WriteLine("\r\n" + "You now have " + R.accounts.Count + " accounts listed below." + "\r\n");
       R.accounts.ForEach(Console.WriteLine);
-      // List<Account> r = List1[0];  
 
     }
 
@@ -188,8 +178,6 @@ namespace JacksonFinancial.Client
 
   }
 }
-
-
 
 // This code will check if the number typed is actually a real number
 
