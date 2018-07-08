@@ -13,10 +13,9 @@ namespace Library.Models
     //  public Account(int id, string username, string accountname, decimal number){
 
     //  }
-
-    public override string ToString()
+    public override string ToString()//actually prints out information instead of the System Object Name
     {
-      return "Account ID: " + Id + "\r\n" + "Name: " + UserName + "\r\n" + "Account Type: " + AccountName + "\r\n" + "Total Balance: $" + AccountBalance + "\r\n";
+      return "Account ID: " + Id + "\r\n" + "Name: " + UserName + "\r\n" + "Account Type: " + AccountName + "\r\n" + "Total Balance: " + String.Format("{0:c}", AccountBalance) + "\r\n";
     }
 
   }
