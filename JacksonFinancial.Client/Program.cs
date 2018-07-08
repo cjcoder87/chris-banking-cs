@@ -22,20 +22,24 @@ namespace JacksonFinancial.Client
       bool exit = false;
       do
       {
+        Console.ResetColor();
         Console.WriteLine("1-Display Accounts|2-Deposit|3-Withdraw|4-Transfer|5-Create Account|6-Quit");
         choice = Console.ReadLine();
-
+        Console.Clear();
 
         switch (choice)
         {
           case "1":
             //List Accounts
+            Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("Display Accounts");
             DisplayLists();
 
             break;
           case "2":
             //Deposit
+            Console.ForegroundColor = ConsoleColor.Green;
+
             Console.WriteLine("Deposit Funds");
             DisplayLists();
             Deposit();
@@ -43,6 +47,8 @@ namespace JacksonFinancial.Client
             break;
           case "3":
             //Withdraw
+            Console.ForegroundColor = ConsoleColor.Red;
+
             Console.WriteLine("Withdraw Funds");
             DisplayLists();
             Withdraw();
@@ -50,12 +56,15 @@ namespace JacksonFinancial.Client
             break;
           case "4":
             //Transfer
+            Console.ForegroundColor = ConsoleColor.Yellow;
+
             Console.WriteLine("Transfer Funds");
             DisplayLists();
             Transfer();
             break;
           case "5":
             //Create Account
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("Create Account");
             CreateAccount();
 
@@ -73,7 +82,6 @@ namespace JacksonFinancial.Client
 
     public string balance;
     public decimal number;
-
     public static Random rnd = new Random();
     public static uint IdMaker = (uint)rnd.Next(1, 1000);
     public static uint ticker = (uint)DateTime.Now.Ticks;
@@ -113,7 +121,7 @@ namespace JacksonFinancial.Client
       }
       else
       {
-        Console.WriteLine("Nothing to see here");
+        Console.WriteLine("No Accounts Exist Yet");
 
       }
       // Console.WriteLine(R.ToString());
