@@ -22,10 +22,11 @@ namespace JacksonFinancial.Client
       bool exit = false;
       do
       {
-        Console.ResetColor();
+        Console.ForegroundColor = ConsoleColor.White;
         Console.WriteLine("1-Display Accounts|2-Deposit|3-Withdraw|4-Transfer|5-Create Account|6-Quit");
         choice = Console.ReadLine();
         Console.Clear();
+        
 
         switch (choice)
         {
