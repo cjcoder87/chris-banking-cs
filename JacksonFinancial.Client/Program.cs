@@ -136,10 +136,10 @@ namespace JacksonFinancial.Client
     string deposit;
     public static void Deposit()
     {
-      Console.WriteLine("Which Account Would You Like to Deposit To");
+      Console.WriteLine("Which Account Would You Like to Deposit To(Choose ID)");
       R.chooseAccount = Console.ReadLine();
       decimal.TryParse(R.chooseAccount, out decimal number3);
-      Console.WriteLine("How much do you want to Deposit");
+      Console.WriteLine("How much do you want to Deposit(Choose ID)");
       R.deposit = Console.ReadLine();
       decimal.TryParse(R.deposit, out decimal number2);
       // decimal.TryParse(R.balance, out decimal number2);
@@ -151,10 +151,10 @@ namespace JacksonFinancial.Client
     }
     public static void Withdraw()
     {
-      Console.WriteLine("Which Account Would You Like to Withdraw From");
+      Console.WriteLine("Which Account Would You Like to Withdraw From(Choose ID)");
       R.chooseAccount = Console.ReadLine();
       decimal.TryParse(R.chooseAccount, out decimal number3);
-      Console.WriteLine("How much do you want to Withdraw");
+      Console.WriteLine("How much do you want to Withdraw(Choose ID)");
       R.deposit = Console.ReadLine();
       decimal.TryParse(R.deposit, out decimal number2);
       // decimal.TryParse(R.balance, out decimal number2);
@@ -167,10 +167,10 @@ namespace JacksonFinancial.Client
 
     public static void Transfer()
     {
-      Console.WriteLine("Which Account Would You Like to Transfer From");
+      Console.WriteLine("Which Account Would You Like to Transfer From(Choose ID)");
       R.chooseAccount = Console.ReadLine();
       decimal.TryParse(R.chooseAccount, out decimal number3);
-      Console.WriteLine("Which Account Would You Like to Transfer To");
+      Console.WriteLine("Which Account Would You Like to Transfer To(Choose ID)");
       R.chooseAccount2 = Console.ReadLine();
       decimal.TryParse(R.chooseAccount2, out decimal number4);
       Console.WriteLine("How much do you want to Transfer");
