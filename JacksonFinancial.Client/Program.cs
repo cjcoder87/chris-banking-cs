@@ -84,9 +84,9 @@ namespace JacksonFinancial.Client
     public decimal number;
 
     public static Random rnd = new Random();
-    public static int IdMaker = rnd.Next(1, 1000);
-    public static int ticker = (int)DateTime.Now.Ticks;
-    public static int AccountIndexer = ticker + IdMaker;
+    public static uint IdMaker = (uint)rnd.Next(1, 1000);
+    public static uint ticker = (uint)DateTime.Now.Ticks;
+    public static uint AccountIndexer = ticker + IdMaker;
 
     public static void CreateAccount()
     {

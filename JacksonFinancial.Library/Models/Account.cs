@@ -8,7 +8,7 @@ namespace Library.Models
     public string AccountName { get; set; }
     public string UserName { get; set; }
     public decimal AccountBalance { get; set; }
-    public int Id { get; set; }
+    public uint Id { get; set; }
 
     //  public Account(int id, string username, string accountname, decimal number){
 
